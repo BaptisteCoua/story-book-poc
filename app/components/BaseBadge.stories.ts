@@ -25,8 +25,8 @@ export const Neutral: Story = {}
 
 export const Success: Story = {
   args: {
-    label: 'Saved',
-    tone: 'success',
+    label: "toto",
+    tone: "success",
   },
 }
 
