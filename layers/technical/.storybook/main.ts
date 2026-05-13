@@ -7,14 +7,14 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const config: StorybookConfig = {
-  stories: ['../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../../../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
 
   framework: {
     name: '@storybook/vue3-vite',
     options: {},
   },
 
-  staticDirs: ['../public'],
+  staticDirs: ['../../../public'],
 
   viteFinal: async (config) => {
     config.plugins = config.plugins || []
@@ -27,7 +27,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve || {}
     config.resolve.alias = {
       ...(config.resolve.alias ?? {}),
-      '~': resolve(__dirname, '../app'),
+      '~': resolve(__dirname, '../../../app'),
     }
     return config
   },

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import BaseBadge from '../../components/BaseBadge.vue'
+import BaseBadge from '../../components/atoms/BaseBadge.vue'
 
 const meta = {
-  title: 'Components/BaseBadge',
+  title: 'Components/Atoms/BaseBadge',
   component: BaseBadge,
   tags: ['autodocs'],
   args: {

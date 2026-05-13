@@ -3,7 +3,7 @@ import { setup } from '@storybook/vue3'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import { worker } from "../app/mocks/handler";
+import { worker } from "../../../app/mocks/handler";
 
 setup((app) => {
   app.use(createVuetify())

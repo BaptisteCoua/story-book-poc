@@ -7,8 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006 --config-dir layers/technical/.storybook",
+    "build-storybook": "storybook build --config-dir layers/technical/.storybook",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
