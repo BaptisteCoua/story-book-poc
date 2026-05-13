@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import BaseBadge from './BaseBadge.vue'
+import BaseBadge from '../../components/BaseBadge.vue'
 
 const meta = {
   title: 'Components/BaseBadge',
@@ -25,7 +25,7 @@ export const Neutral: Story = {}
 
 export const Success: Story = {
   args: {
-    label: "toto",
+    label: "Success",
     tone: "success",
   },
 }

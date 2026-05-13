@@ -3,9 +3,14 @@ import { setup } from '@storybook/vue3'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+import { worker } from "../app/mocks/handler";
 
 setup((app) => {
   app.use(createVuetify())
+})
+
+await worker.start({
+  onUnhandledRequest: 'bypass',
 })
 
 const preview: Preview = {
@@ -15,14 +20,6 @@ const preview: Preview = {
       template: '<v-app><v-main><story /></v-main></v-app>',
     }),
   ],
-  parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
-  },
 }
 
 export default preview
